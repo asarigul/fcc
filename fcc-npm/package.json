@@ -1,0 +1,19 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"description": "freecodecamp.org's backend development challenge project",
+	"keywords": [ "freecodecamp", "node.js", "JavaScript", "backend" ],
+	"license": "GPL-2.0-only",
+	"version": "0.0.1",
+	"author": "Akin Sarigul",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
+	}
+}
