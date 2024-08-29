@@ -12,10 +12,6 @@
     "express": "^4.12.4",
     "mongoose": "^5.11.15"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/freeCodeCamp/boilerplate-mongomongoose.git"
-  },
   "keywords": [
     "node",
     "mongoose",
