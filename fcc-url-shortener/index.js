@@ -3,8 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const NodeCache = require("node-cache");
 const bodyParser = require("body-parser");
-const dns = require("dns");
-const urlLib = require("url");
+const DNS = require("dns");
+const URL = require("url");
 
 const app = express();
 
@@ -31,11 +31,11 @@ app.get("/", function (req, res) {
 
 app.post("/api/shorturl", function (req, res) {
   const urlParam = req.body.url;
-  const url = urlLib.parse(urlParam);
+  const url = URL.parse(urlParam);
 
   console.log("url is", url);
 
-  dns.lookup(url.hostname, (err, addr, family) => {
+  DNS.lookup(url.hostname, (err, addr, family) => {
     if (err || !url.hostname) {
       return invalidUrl(res, urlParam);
     }
